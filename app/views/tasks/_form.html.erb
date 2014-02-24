@@ -15,15 +15,12 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </div>
+  <%= f.hidden_field :user_id, value: current_user.id %>
   <div class="field">
     <%= f.label :status %><br />
-    <%= f.text_field :status %>
+    <%= f.check_box :status %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit nil, class: "button" %>
   </div>
 <% end %>
