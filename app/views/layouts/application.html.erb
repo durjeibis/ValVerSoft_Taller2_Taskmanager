@@ -34,7 +34,7 @@
         </li>
         <li>
           <%=
-          link_to 'Log Out', destroy_user_session_path, method: :delete
+          link_to 'Log Out', logout_path, method: :delete
           %>
         </li>
 
@@ -42,12 +42,12 @@
 
         <li>
            <%=
-          link_to 'Sign Up', new_user_registration_path, class: "button"
+          link_to 'Sign Up', register_path, class: "button"
           %>
         </li>
         <li>
           <%=
-          link_to 'Sign In', new_user_session_path
+          link_to 'Sign In', login_path
           %>
         </li>
 
