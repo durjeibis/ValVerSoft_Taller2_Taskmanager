@@ -1,11 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  user: 
-  status: MyString
+  name: tareas 1
+  user: ingris
+  status: 1
 
-two:
-  name: MyString
-  user: 
-  status: MyString
+
+#two:
+  #name: Tarea 2
+  #user: 1
+  #status: 0

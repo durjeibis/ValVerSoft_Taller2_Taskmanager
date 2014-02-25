@@ -1,13 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  username: MyString
-  name: MyString
-  lastname: MyString
-  email: MyString
+1:
+  username: ingris
+  name: Ingris
+  lastname: Santodomingo
+  #email: ijsantodomingo@hotmail.com
 
-two:
-  username: MyString
-  name: MyString
-  lastname: MyString
-  email: MyString
