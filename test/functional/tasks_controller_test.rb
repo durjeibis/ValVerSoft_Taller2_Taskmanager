@@ -5,28 +5,11 @@ class TasksControllerTest < ActionController::TestCase
     @task = tasks(:one)
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:tasks)
-  end
 
-  test "should get new" do
+  test "debe ir a la autenticacion si no esta logeado" do
     get :new
-    assert_response :success
-  end
-
-  test "should create task" do
-    assert_difference('Task.count') do
-      post :create, task: { name: @task.name, status: @task.status }
-    end
-
-    assert_redirected_to task_path(assigns(:task))
-  end
-
-  test "should show task" do
-    get :show, id: @task
-    assert_response :success
+    assert_response :redirect
+    assert_redirected_to new_user_session_path
   end
 
   test "should get edit" do
@@ -46,4 +29,5 @@ class TasksControllerTest < ActionController::TestCase
 
     assert_redirected_to tasks_path
   end
+
 end

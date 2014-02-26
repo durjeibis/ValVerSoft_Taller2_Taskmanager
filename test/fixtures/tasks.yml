@@ -2,11 +2,11 @@
 
 one:
   name: tareas 1
-  user: ingris
+  user_id: 1
   status: 1
 
 
-#two:
-  #name: Tarea 2
-  #user: 1
-  #status: 0
+two:
+  name: Tarea 2
+  user: 1
+  status: 0
